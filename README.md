@@ -1,16 +1,64 @@
-# React + Vite
+# Healify - AI-Powered Physiotherapy Assistant (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This is the frontend application for Healify, an AI-powered physiotherapy assistant. The application uses your device's camera to evaluate exercise form in real-time, providing immediate visual feedback and tracking to help users perform physiotherapy exercises correctly and safely.
 
-Currently, two official plugins are available:
+**Live App (Frontend):** [https://healify-ai-powered-physiotherapy-as.vercel.app/](https://healify-ai-powered-physiotherapy-as.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Contributions](#contributions)
 
-## React Compiler
+## Features
+- **Real-Time Pose Detection**: Utilizes advanced machine learning models running directly in the browser to track body movements.
+- **Exercise Form Evaluation**: Connects with backend ML models to analyze forms and provide corrective feedback.
+- **Responsive UI**: Built with a modern, responsive interface using React and Tailwind CSS.
+- **State Management**: Robust application state handling with Redux Toolkit.
+- **Smooth Animations**: Enhances user experience with fluid transitions using Framer Motion.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
+- **React**: UI library for building component-based interfaces.
+- **Vite**: Next-generation frontend tooling for fast development and building.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+- **MediaPipe Pose**: High-fidelity body pose tracking.
+- **TensorFlow.js**: Running machine learning models in the browser.
+- **Redux Toolkit**: Predictable state container for JavaScript apps.
+- **Framer Motion**: Production-ready motion library for React.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Node.js (v16 or higher recommended)
+- npm (comes with Node.js)
+
+### Installation & Running Locally
+1. Clone the repository and navigate to the frontend directory:
+   ```bash
+   cd Healify-AI-Powered-Physiotherapy-Assistant
+   ```
+
+2. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to the local URL provided in the terminal (usually `http://localhost:5173`).
+
+## Contributions
+I was responsible for nearly all development across the project. 
+
+For the **Frontend**, my primary contributions include:
+- Designing and developing the complete user interface using React and Tailwind CSS.
+- Integrating MediaPipe Pose and TensorFlow.js directly into the browser for real-time video processing and landmark extraction.
+- Implementing application state management using Redux Toolkit to handle active exercise states and video tracking.
+- Creating fluid UI animations and interactive components using Framer Motion.
+- Setting up the Vite build tooling and configuring the development environment.
+
+*(Note: Authentication, RAG (Retrieval-Augmented Generation), and Notifications mechanisms were implemented by other contributors/teams.)*

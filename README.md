@@ -52,6 +52,8 @@ This is the frontend application for Healify, an AI-powered physiotherapy assist
 4. Open your browser and navigate to the local URL provided in the terminal (usually `http://localhost:5173`).
 
 ## Contributions
+*The original Healify repository is private as it contains sensitive code and ongoing work by the team. However, I've created separate public repositories that showcase my specific contributions to the project.*
+
 I was responsible for nearly all development across the project. 
 
 For the **Frontend**, my primary contributions include:
